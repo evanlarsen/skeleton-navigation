@@ -1,20 +1,18 @@
 System.config({
-  "defaultJSExtensions": true,
-  "transpiler": "babel",
-  "babelOptions": {
+  defaultJSExtensions: true,
+  transpiler: "babel",
+  babelOptions: {
     "optional": [
       "runtime"
     ]
   },
-  "paths": {
+  paths: {
     "*": "dist/*",
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
-  }
-});
+  },
 
-System.config({
-  "map": {
+  map: {
     "aurelia-animator-css": "github:aurelia/animator-css@0.17.0",
     "aurelia-binding": "github:aurelia/binding@0.10.1",
     "aurelia-bootstrapper": "github:aurelia/bootstrapper@0.18.0",
@@ -24,6 +22,7 @@ System.config({
     "aurelia-framework": "github:aurelia/framework@0.17.0",
     "aurelia-history": "github:aurelia/history@0.8.0",
     "aurelia-history-browser": "github:aurelia/history-browser@0.9.0",
+    "aurelia-http-client": "github:aurelia/http-client@0.12.0",
     "aurelia-loader": "github:aurelia/loader@0.10.0",
     "aurelia-loader-default": "github:aurelia/loader-default@0.11.2",
     "aurelia-logging": "github:aurelia/logging@0.8.0",
@@ -44,6 +43,8 @@ System.config({
     "core-js": "npm:core-js@0.9.18",
     "fetch": "github:github/fetch@0.9.0",
     "font-awesome": "npm:font-awesome@4.4.0",
+    "moment": "github:moment/moment@2.10.6",
+    "numeral": "npm:numeral@1.5.3",
     "text": "github:systemjs/plugin-text@0.0.2",
     "github:aurelia/animator-css@0.17.0": {
       "aurelia-metadata": "github:aurelia/metadata@0.9.0",
@@ -99,6 +100,11 @@ System.config({
     "github:aurelia/history-browser@0.9.0": {
       "aurelia-history": "github:aurelia/history@0.8.0",
       "aurelia-pal": "github:aurelia/pal@0.2.0",
+      "core-js": "npm:core-js@0.9.18"
+    },
+    "github:aurelia/http-client@0.12.0": {
+      "aurelia-pal": "github:aurelia/pal@0.2.0",
+      "aurelia-path": "github:aurelia/path@0.10.0",
       "core-js": "npm:core-js@0.9.18"
     },
     "github:aurelia/loader-default@0.11.2": {
@@ -202,6 +208,9 @@ System.config({
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"
     },
+    "npm:numeral@1.5.3": {
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
+    },
     "npm:process@0.11.2": {
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
@@ -211,4 +220,3 @@ System.config({
     }
   }
 });
-
